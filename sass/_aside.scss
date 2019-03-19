@@ -1,0 +1,14 @@
+aside{
+    position:fixed;
+    top:15px;
+    left:15px;
+    color:#37ca8a;
+    font-size: 25px;
+    z-index:10;
+}
+
+@media(min-width:1024px){
+    aside{
+        display:none;
+    }
+}

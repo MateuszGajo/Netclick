@@ -1,0 +1,17 @@
+@keyframes arrow-right{
+    0%{
+        transform: rotate(-45deg) translateX(0);
+    }
+    100%{
+        transform: rotate(-45deg) translateX(100%)
+    }
+}
+
+@keyframes arrow-left{
+    0%{
+        transform: rotate(-45deg) translateX(0);
+    }
+    100%{
+        transform: rotate(-45deg) translateX(-100%)
+    }
+}

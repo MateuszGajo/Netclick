@@ -1,0 +1,110 @@
+main{
+    .team{
+        .container {
+            >h1{
+                position:relative;
+                font-size: 6rem;
+                text-align: center;
+                &:before{
+                    content:"";
+                    position:absolute;
+                    bottom:0;
+                    left:50%;
+                    transform: translateX(-50%);
+                    width:40%;
+                    height:5px;
+                    background-color: #37ca8a;
+                }
+                span{
+                    font-weight: 200;
+                }
+            }
+            .persons-wrapper{
+                display:flex;
+                text-align: center;
+                .person{
+                    padding-top:100px;
+                    width:33%;
+                    opacity:0;
+                    transition: 2s;
+                    .personal-data{
+                        position:relative;
+                       h1{
+                           padding-top:30px;
+                           font-size: 2rem;
+                       }
+                       .person-image{
+                           position:relative;
+                           top:0;
+                           left:0;
+                           width:200px;
+                           height:200px;
+                           border-radius:50%;
+                           margin:0 auto;
+                           overflow: hidden;
+                            img{
+                                display:block;
+                                position:absolute;
+                                top:50%;
+                                left:50%;
+                                transform: translate(-50%,-50%)
+                            }
+                        }
+                        &:before{
+                            content:"";
+                            position:absolute;
+                            top:100%;
+                            left:50%;
+                            transform: translateX(-50%);
+                            width:50%;
+                            height:2px;
+                            background-color: #c9c9c9;
+                        }
+                        p{
+                            color:#b8b8b8;
+                            padding-bottom:20px;
+                        }
+                    }
+                    .contact{
+                        padding-top:20px;
+                        p{
+                            display:flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            padding:0 25%;
+                            i{
+                                color:#37ca8a;
+                                padding-right:10px;
+                            }
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@media (max-width:1023px) {
+    main{
+        .team{
+            .container{
+                .persons-wrapper{
+                    flex-direction: column;
+                    align-items: center;
+                    .person{
+                        opacity:1;
+                        width:auto;
+                        .contact{
+                            p{
+                                padding:0 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
