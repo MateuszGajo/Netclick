@@ -1,9 +1,9 @@
-##Netclick
+## Netclick
 Technologies:
 Html,
 Css,
 Scss,
 JavaScript(with jQuery)
 
-##demo
+## Demo
 https://my-7c381.firebaseapp.com/
